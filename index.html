@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos de Alimentación</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-apple-alt"></i> Productos de Alimentación</h1>
+  </header>
+
+  <section class="filtros">
+    <div class="filtro-group">
+      <label for="filtroProveedor"><i class="fas fa-truck"></i> Proveedor</label>
+      <select id="filtroProveedor">
+        <option value="">Todos</option>
+      </select>
+    </div>
+
+    <div class="filtro-group">
+      <label for="filtroCategoria"><i class="fas fa-tags"></i> Categoría</label>
+      <select id="filtroCategoria">
+        <option value="">Todas</option>
+      </select>
+    </div>
+
+    <button onclick="filtrarProductos()"><i class="fas fa-filter"></i> Filtrar</button>
+  </section>
+
+  <main class="tabla-container">
+    <table id="tablaProductos">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Producto</th>
+          <th>Proveedor</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+          <th>Stock</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>
